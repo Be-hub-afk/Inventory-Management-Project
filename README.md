@@ -7,29 +7,23 @@
 
 ### Overview
 
+The Inventory Management System project aims to develop a comprehensive system for managing inventory levels, orders, and stock.This initiative is to support the marketing team by offering resources and insights that improve their approaches and decision-making procedures. The system can provide useful insights on market trends, product performance, and consumer behaviour by utilising data analytics. The marketing team can improve their outreach efforts overall, target audiences more precisely, and fine-tune their campaigns thanks to this data-driven strategy.
+
+
 ### Project Goal
+To create an intelligent inventory management system that can predict stock requirements, automate reordering processes, and identify trends in inventory usage.The system aims to automate and simplify the process of managing product inventories. Real-time inventory level monitoring will be provided by the system, which will also issue alarms when quantities drop below predetermined levels. In addition to preventing stockouts, this proactive warning system makes sure that the marketing team is aware of the availability of products. By integrating such a system, overall operational efficiency is improved and the danger of lost sales opportunities owing to inadequate inventory is reduced.
+
 
 ### Business Understanding
+The project addresses the challenge of managing inventory in a dynamic sales environment.
 
 ### Data Understanding 
-
-### Data Preparation
-
-
-
-
-
-This initiative is to support the marketing team by offering resources and insights that improve their approaches and decision-making procedures. The system can provide useful insights on market trends, product performance, and consumer behaviour by utilising data analytics. The marketing team can improve their outreach efforts overall, target audiences more precisely, and fine-tune their campaigns thanks to this data-driven strategy.
-
-The creation of an advanced inventory system aims to automate and simplify the process of managing product inventories. Real-time inventory level monitoring will be provided by the system, which will also issue alarms when quantities drop below predetermined levels. In addition to preventing stockouts, this proactive warning system makes sure that the marketing team is aware of the availability of products. By integrating such a system, overall operational efficiency is improved and the danger of lost sales opportunities owing to inadequate inventory is reduced.
+The dataset includes historical inventory data, sales records, and supplier lead times. It captures the quantity of items sold, dates of transactions, stock levels, and reorder points.
 
 
 ###  EDA
 
-
-
 The metrics used for the EDA analysis include :
-
 
 1. Popular products : 
    Determining which products have the highest sales volume or revenue.
