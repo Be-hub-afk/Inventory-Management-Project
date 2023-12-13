@@ -197,7 +197,7 @@ In conclusion, while there are slight variances in transactions per day, the ove
 
 ### Modelling
 
-Our analysis aims to forecast future product sales, enabling us to create an effective inventory management system. To achieve this, we will employ univariate time series analysis, allowing us to generate predictions for each distinct product within our inventory.
+Our analysis aims to forecast future product sales, enabling us to create an effective inventory management system. To achieve this, we will employ multivariate time series analysis, allowing us to generate predictions for each distinct product within our inventory.
 
 Our first step  is use to use our data to generate the daily aggregate sales for each unique product
 
