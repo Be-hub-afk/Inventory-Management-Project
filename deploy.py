@@ -44,17 +44,16 @@ class ForecastEnsembler:
 rnn_model_path = "rnn_model.joblib"
 e2d2_model_path = "e2d2_model.joblib"
 
-# Check if model files exist
+# check if model files exist
 if not os.path.exists(rnn_model_path) or not os.path.exists(e2d2_model_path):
     raise FileNotFoundError("Model files not found.")
 
-# Load models using joblib
+# load models using joblib
 rnn_model = joblib.load(rnn_model_path)
 e2d2_model = joblib.load(e2d2_model_path)
 
-# Assuming n_past and n_features are known
-n_past = 10
-n_features = 5
+n_past = past
+n_features = features
 
 # Instantiate ForecastEnsembler
 forecaster = ForecastEnsembler(rnn_model, e2d2_model, n_past, n_features)
@@ -64,19 +63,18 @@ def home():
     # Render the HTML template
     return render_template('index.html')
 
-# Define API endpoint for predictions
+# define API endpoint for predictions
 @app.route('/predict', methods=['POST'])
 def predict():
     # Get data from the request
     data = request.json
 
-    # Assuming the data contains last sales data
     last_sales_data = np.array(data['last_sales_data']).reshape((1, n_past, n_features))
 
-    # Generate forecasts using the ensemble model
+    # generate forecasts using ensemble model
     ensemble_forecast = forecaster.generate_forecasts(last_sales_data)
 
-    # Return the ensemble forecasts
+    # return the forecasts
     return jsonify({'ensemble_forecast': ensemble_forecast.tolist()})
 
 if __name__ == '__main__':
