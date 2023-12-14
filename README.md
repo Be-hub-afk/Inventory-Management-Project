@@ -250,3 +250,7 @@ Through averaging of both projects outcomes, were able to make one year sales pr
 Upon instantiation, the class takes in the initial inventory level and the safety stock threshold, two parameters that lay the foundation for effective inventory control.
 
 The sale method, which is expected to work seamlessly with the forecasted data simulates the reduction of inventory due to product sales, taking as input the predicted daily sales for a week. It also includes a crucial check for stockout conditions which lets us know when the inventory level falls below the safety stock threshold
+
+### Deployment
+We created a python script (deploy.py)
+The python script code  provides an endpoint for making inventory predictions using an ensemble of two models (rnn_model and e2d2_model). The prediction is based on the input data provided to the "/predict" endpoint.
