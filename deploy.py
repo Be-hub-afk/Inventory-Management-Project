@@ -44,10 +44,6 @@ class ForecastEnsembler:
 rnn_model_path = "rnn_model.joblib"
 e2d2_model_path = "e2d2_model.joblib"
 
-# check if model files exist
-if not os.path.exists(rnn_model_path) or not os.path.exists(e2d2_model_path):
-    raise FileNotFoundError("Model files not found.")
-
 # load models using joblib
 rnn_model = joblib.load(rnn_model_path)
 e2d2_model = joblib.load(e2d2_model_path)
