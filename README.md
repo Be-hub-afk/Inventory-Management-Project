@@ -245,4 +245,8 @@ One main reason for this would be not having enough historical data as the data 
 Collect more data for our analysis
 
 ### INVENTORY MANAGEMENT
+Through averaging of both projects outcomes, were able to make one year sales predictions. We shall make use of this predictions to create an Inventory Manager class.
 
+Upon instantiation, the class takes in the initial inventory level and the safety stock threshold, two parameters that lay the foundation for effective inventory control.
+
+The sale method, which is expected to work seamlessly with the forecasted data simulates the reduction of inventory due to product sales, taking as input the predicted daily sales for a week. It also includes a crucial check for stockout conditions which lets us know when the inventory level falls below the safety stock threshold
